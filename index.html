@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #home {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-black shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-white">My Portfolio</h1>
+        <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:text-blue-500 text-white">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-500 text-white">About</a></li>
+            <li><a href="#contact" class="hover:text-blue-500 text-white">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col items-center text-center p-10">
+        <h2 class="text-3xl font-semibold text-white">Welcome to My Portfolio</h2>
+        <p class="text-gray-200">I'm a Passionate Developer</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="max-w-md my-4 mx-auto p-6 bg-white shadow rounded">
+        <h2 class="text-xl font-semibold mb-4">Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" class="w-full p-2 border rounded mb-2">
+            <input type="email" id="email" placeholder="Email" class="w-full p-2 border rounded mb-2">
+            <textarea id="message" placeholder="Message" class="w-full p-2 border rounded mb-2"></textarea>
+            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+        </form>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="max-w-3xl mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4">Latest Blog Posts</h2>
+        <div id="posts" class="space-y-4"></div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="max-w-3xl mx-auto p-6">
+        <h2 class="text-2xl font-semibold text-center mb-6">What Clients Say</h2>
+        <div class="space-y-6">
+            <div class="p-4 bg-gray-200 rounded shadow">
+                <p class="italic">"An amazing developer! Delivered exactly what I needed on time and with great
+                    quality."</p>
+                <h4 class="mt-2 font-semibold">- Alex Johnson</h4>
+            </div>
+            <div class="p-4 bg-gray-200 rounded shadow">
+                <p class="italic">"Professional and skilled, made my website look modern and responsive!"</p>
+                <h4 class="mt-2 font-semibold">- Sarah Lee</h4>
+            </div>
+            <div class="p-4 bg-gray-200 rounded shadow">
+                <p class="italic">"Great communication and top-notch coding skills. Highly recommend!"</p>
+                <h4 class="mt-2 font-semibold">- Michael Smith</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white text-center p-4 mt-8">
+        <div class="flex justify-center space-x-4">
+            <a href="https://wa.me/yourwhatsappnumber" class="text-green-400 text-2xl" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/yourusername" class="text-pink-500 text-2xl" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="mb-2">&copy; 2025 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
